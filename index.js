@@ -8,6 +8,9 @@ const humidityLogger = new (winston.Logger)({
     new (winston.transports.File)({
       filename: '/var/log/iot/humidity.log',
       logstash: true,
+      timestamp: () => {
+        return new Date().getTime()
+      }
     }),
   ],
 })
