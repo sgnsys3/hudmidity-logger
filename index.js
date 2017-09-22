@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 
 
 app.post('/data', (req, res) => {
-  if(req.body.humidity === undefined || req.body.temperature === undefined) {
+  if (req.body.humidity === undefined || req.body.temperature === undefined || req.body.location === undefined) {
     res.send(JSON.stringify({
       error: 'Not enough Data',
     }))
