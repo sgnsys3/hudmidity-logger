@@ -1,0 +1,13 @@
+{
+  "name": "humidity-logger",
+  "version": "0.1",
+  "description": "Using for receive data from NodeMCU and log it !",
+  "main": "index.js",
+  "author": "Pureewat Kaewpoy",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "winston": "^2.3.1"
+  }
+}
