@@ -24,6 +24,7 @@ app.post('/data', (req, res) => {
       error: 'Not enough Data',
     }))
   }
+  req.body.type = 'humidity'
   humidityLogger.info(req.body)
   res.send(JSON.stringify(req.body))
 })
